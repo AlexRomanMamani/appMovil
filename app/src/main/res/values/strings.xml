@@ -18,4 +18,6 @@
     <string name="contrase_a">Contraseña</string>
     <string name="cerrar_sesi_n">Cerrar Sesión</string>
     <string name="los_datos_se_mostrar_n_aqu">Los datos se mostrarán aquí</string>
+    <string name="mostrar_datos">Mostrar Datos</string>
+    <string name="los_datos_se_mostraran_aqui">Los datos se mostraran aqui</string>
 </resources>

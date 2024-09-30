@@ -160,23 +160,34 @@
         app:layout_constraintTop_toBottomOf="@+id/statusIcon"
         tools:ignore="MissingConstraints" />
 
-    <!-- Nuevo TextView para mostrar los datos -->
-    <TextView
-        android:id="@+id/textViewData"
+    <!-- Cuadro para contener el TextView de datos -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dataCardView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/los_datos_se_mostrar_n_aqu"
-        android:textColor="@android:color/white"
-        android:textSize="14sp"
-        android:fontFamily="@font/roboto"
+        app:cardBackgroundColor="#80000000"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoutButton" />
+        app:layout_constraintTop_toBottomOf="@+id/logoutButton">
 
-    <!-- Nuevo Button para obtener los datos -->
+        <TextView
+            android:id="@+id/textViewData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:padding="16dp"
+            android:text="@string/los_datos_se_mostraran_aqui"
+            android:textAlignment="center"
+            android:textColor="#7986CB"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
     <Button
         android:id="@+id/buttonShowData"
         android:layout_width="200dp"
@@ -184,14 +195,12 @@
         android:layout_marginTop="16dp"
         android:elevation="4dp"
         android:fontFamily="@font/roboto"
-        android:text="Mostrar Datos"
+        android:text="@string/mostrar_datos"
         android:textColor="#F5F5F5"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:icon="@android:drawable/ic_menu_view"
-        app:iconSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewData" />
+        app:layout_constraintTop_toBottomOf="@+id/dataCardView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
