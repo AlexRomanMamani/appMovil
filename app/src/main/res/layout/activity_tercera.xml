@@ -9,6 +9,7 @@
     tools:context=".TerceraActivity">
 
     <TextView
+        android:id="@+id/appTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_bold"
@@ -21,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.144" />
-
 
     <TextView
         android:id="@+id/appDescription"
@@ -57,9 +57,6 @@
         app:layout_constraintTop_toBottomOf="@+id/button2"
         app:layout_constraintVertical_bias="0.869"
         tools:ignore="MissingConstraints" />
-
-    <!-- Botón "Cerrar Sesión" -->
-
 
     <Button
         android:id="@+id/button2"
@@ -163,5 +160,38 @@
         app:layout_constraintTop_toBottomOf="@+id/statusIcon"
         tools:ignore="MissingConstraints" />
 
+    <!-- Nuevo TextView para mostrar los datos -->
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/los_datos_se_mostrar_n_aqu"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoutButton" />
+
+    <!-- Nuevo Button para obtener los datos -->
+    <Button
+        android:id="@+id/buttonShowData"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="Mostrar Datos"
+        android:textColor="#F5F5F5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@android:drawable/ic_menu_view"
+        app:iconSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewData" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

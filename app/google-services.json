@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "938799863607",
+    "project_id": "appmovilinacap",
+    "storage_bucket": "appmovilinacap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938799863607:android:21f4e55ed3760a6785acb2",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBteSRjzMEhzFK4CjWomMAmTOLY3sOajFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
