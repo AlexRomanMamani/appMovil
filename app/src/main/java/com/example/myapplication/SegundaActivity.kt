@@ -4,7 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -35,6 +34,11 @@ class SegundaActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val buttonBackToMain = findViewById<Button>(R.id.btn_back_primera)
+        buttonBackToMain.setOnClickListener {
+            finish()  // Esto cerrará la actividad actual y volverá a la anterior
         }
 
         // Inicializar FirebaseAuth, Firestore y Realtime Database

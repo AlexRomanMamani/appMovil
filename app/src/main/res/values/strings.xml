@@ -20,4 +20,19 @@
     <string name="los_datos_se_mostrar_n_aqu">Los datos se mostrarán aquí</string>
     <string name="mostrar_datos">Mostrar Datos</string>
     <string name="los_datos_se_mostraran_aqui">Los datos se mostraran aqui</string>
+    <string name="datos">Datos</string>
+    <string name="autor_libro">Autor Libro</string>
+    <string name="btn_guardar">Guardar Datos</string>
+    <string name="btn_mostrar">Mostrar Datos</string>
+    <string name="registros">Registros</string>
+    <string name="textV_datos">"Guardar Y Mostrar Datos "</string>
+    <string name="nombre_libro">Nombre Libro</string>
+    <string name="registro_de_usuario">Registro de Usuario</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="correo_electr_nico">Correo electrónico</string>
+    <string name="btn_back_tercera">Volver</string>
+    <string name="volver_atras" />
+    <string name="volver">Volver</string>
+    <string name="btn_back_primera"></string>">
+    <string name="btn_tercera"></string>
 </resources>

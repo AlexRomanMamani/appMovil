@@ -2,46 +2,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#C8C8C8"
     android:orientation="vertical"
     android:padding="16dp">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registro de Usuario"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:text="@string/registro_de_usuario"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nombre de usuario"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:hint="@string/nombre_de_usuario"
         android:inputType="text"
-        android:layout_marginBottom="8dp"/>
+        android:textColorHint="#B9050505" />
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Correo electrónico"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:hint="@string/correo_electr_nico"
         android:inputType="textEmailAddress"
-        android:layout_marginBottom="8dp"/>
+        android:textColorHint="#B9121212" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Contraseña"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:hint="@string/contrase_a"
         android:inputType="textPassword"
-        android:layout_marginBottom="16dp"/>
+        android:textColorHint="#B9000000" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrarse"/>
+        android:backgroundTint="#0785F4"
+        android:text="@string/registrarse"
+        android:textColorHint="#F4ECEC" />
 
 </LinearLayout>
