@@ -58,7 +58,7 @@ class SegundaActivity : AppCompatActivity() {
             val password = textPassword.text.toString()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                signIn(email, password, textEmail, textPassword)
+                signIn(email, password, textPassword)
             } else {
                 Toast.makeText(
                     baseContext,
@@ -135,11 +135,10 @@ class SegundaActivity : AppCompatActivity() {
             }
     }
 
-    private fun signIn(email: String, password: String, textEmail: EditText, textPassword: EditText) {
+    private fun signIn(email: String, password: String, textPassword: EditText) {
         firebaseAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    val user = firebaseAuth.currentUser
                     Toast.makeText(baseContext, "Bienvenido", Toast.LENGTH_SHORT).show()
                     // Aquí puedes saltar a otra pantalla si la autenticación es exitosa
                     val intent = Intent(this, TerceraActivity::class.java)

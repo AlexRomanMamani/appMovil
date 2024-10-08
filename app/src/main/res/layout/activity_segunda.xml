@@ -17,7 +17,7 @@
         android:elevation="4dp"
         android:fontFamily="@font/roboto"
         android:text="@string/registrarse"
-        android:textColor="#F5F5F5"
+        android:textColor="#FAFAFA"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,13 +34,14 @@
         android:hint="@string/tu_contrase_a"
         android:inputType="textPassword"
         android:textColor="@color/white"
-        android:textColorHint="#90E4E2E2"
+        android:textColorHint="#9FA8DA"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/passwordLabel"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <TextView
         android:id="@+id/loginDescription"
@@ -78,13 +79,14 @@
         android:elevation="4dp"
         android:fontFamily="@font/roboto"
         android:text="@string/iniciar_sesi_n"
-        android:textColor="#F5F5F5"
+        android:textColor="#FAFAFA"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/passwordInput" />
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <TextView
         android:id="@+id/loginTitle"
@@ -122,13 +124,14 @@
         android:hint="@string/tu_correo"
         android:inputType="textEmailAddress"
         android:textColor="@color/white"
-        android:textColorHint="#90E4E2E2"
+        android:textColorHint="#82B1FF"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/emailLabel"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/btn_back_primera"
@@ -143,7 +146,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="@android:color/white"
-        android:text="@string/btn_back_primera"/>
+        android:text="@string/volver2"/>
 
     <TextView
         android:id="@+id/poweredBy"

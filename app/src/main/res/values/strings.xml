@@ -35,4 +35,6 @@
     <string name="volver">Volver</string>
     <string name="btn_back_primera"></string>">
     <string name="btn_tercera"></string>
+    <string name="volver2">volver</string>
+    <string name="ir">ir</string>
 </resources>

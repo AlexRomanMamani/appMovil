@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appDescription" />
+        app:layout_constraintTop_toTopOf="@+id/appDescription"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,12 +29,12 @@
         android:text="@string/app_name"
         android:textColor="#F5F5F5"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/appDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.87" />
+        app:layout_constraintVertical_bias="0.23" />
 
     <TextView
         android:id="@+id/appDescription"
