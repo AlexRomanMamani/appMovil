@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">SIMPLEALERT</string>
+    <string name="app_name">EcoLuz</string>
     <string name="status_icon_description">Estado de la conexión</string>
     <string name="settings_icon_description">Configuración</string>
-    <string name="alarm_test">Alarm Test</string>
+    <string name="alarm_test">Simular Lectura</string>
     <string name="ltimas_alarmas">Últimas Alarmas</string>
     <string name="conectado">Conectado</string>
-    <string name="alertas_de_nuevos_clientes_en_simplefactura">Alertas de nuevos clientes en SimpleFactura</string>
-    <string name="powered_by_simplefactura">Powered by SimpleFactura</string>
+    <string name="descripcion">Monitoreo Inteligente de Luz Ambiental</string>
+    <string name="powered_by_tritech">Powered by TriTech</string>
     <string name="empezar">Empezar</string>
     <string name="tu_correo">Tu correo</string>
     <string name="tu_contrase_a">Tu contraseña</string>
@@ -37,4 +37,12 @@
     <string name="btn_tercera"></string>
     <string name="volver2">volver</string>
     <string name="ir">ir</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="simular_lectura">Simular Lectura</string>
+    <string name="conectar_bluetooth">Conectar Bluetooth</string>
+    <string name="selecciona_el_intervalo_de_lectura">Selecciona el Intervalo de Lectura</string>
+    <string name="_10_segundos">10 segundos</string>
+    <string name="_30_segundos">30 segundos</string>
+    <string name="_60_segundos">60 segundos</string>
+    <string name="guardar">Guardar</string>
 </resources>

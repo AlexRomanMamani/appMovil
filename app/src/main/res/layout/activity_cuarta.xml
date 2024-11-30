@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,173 +9,85 @@
     android:background="@drawable/gradiante"
     tools:context=".CuartaActivity">
 
+    <!-- Título de la aplicación -->
+
+    <!-- Descripción de la aplicación -->
+
+
     <TextView
         android:id="@+id/appTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/app_name"
         android:textColor="#F5F5F5"
         android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logosol"
+        app:layout_constraintBottom_toBottomOf="@+id/appTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/appDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:fontFamily="@font/roboto"
-        android:text="@string/alertas_de_nuevos_clientes_en_simplefactura"
+        android:text="@string/descripcion"
         android:textColor="@android:color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appTitle"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.455"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.1" />
 
-    <TextView
-        android:id="@+id/poweredBy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="@font/roboto"
-        android:text="@string/powered_by_simplefactura"
-        android:textColor="@android:color/white"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.869"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
-        android:elevation="4dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/ltimas_alarmas"
-        android:textColor="#F5F5F5"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:icon="@drawable/book2"
-        app:iconSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
-
-    <Button
-        android:id="@+id/logoutButton"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
-        android:elevation="4dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/cerrar_sesi_n"
-        android:textColor="#F5F5F5"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:icon="@drawable/logout"
-        app:iconSize="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button2" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:backgroundTint="@null"
-        android:elevation="4dp"
-        android:fontFamily="@font/roboto"
-        android:text="@string/alarm_test"
-        android:textColor="#F5F5F5"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:icon="@android:drawable/ic_lock_idle_alarm"
-        app:iconSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426" />
-
-    <Button
-        android:id="@+id/btn_back_tercera"
-        android:layout_width="82dp"
-        android:layout_height="66dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#00FFFFFF"
-        app:icon="?attr/actionModeCloseDrawable"
-        app:iconPadding="0dp"
-        android:text="@string/volver"
-        app:iconSize="34dp"
-        app:iconTint="@android:color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="@string/volver_atras"
-        app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@android:color/white"/>
-
+    <!-- Ícono de configuración -->
     <ImageView
         android:id="@+id/settingsIcon"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignParentStart="true"
         android:layout_margin="16dp"
         android:contentDescription="@string/settings_icon_description"
         android:src="@drawable/baseline_settings_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:tint="#F5F5F5" />
 
+    <!-- Botón de Simular Lectura -->
 
-    <!-- Cuadro para contener el TextView de datos -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/dataCardView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+    <!-- Botón para Mostrar Datos -->
+
+    <Button
+        android:id="@+id/simulate"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="#80000000"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@null"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/simular_lectura"
+        android:textColor="#F5F5F5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/library"
+        app:iconPadding="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintTop_toBottomOf="@id/connectBluetoothButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoutButton">
-
-        <TextView
-            android:id="@+id/textViewData"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto"
-            android:padding="16dp"
-            android:text="@string/los_datos_se_mostraran_aqui"
-            android:textAlignment="center"
-            android:textColor="#7986CB"
-            android:textSize="16sp" />
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/buttonShowData"
@@ -187,9 +100,64 @@
         android:textColor="#F5F5F5"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:icon="@drawable/database"
+        app:iconPadding="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintTop_toBottomOf="@id/simulate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dataCardView" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cerrar_sesion"
+        android:textColor="#F5F5F5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/logout"
+        app:iconPadding="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonShowData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- Footer con "Powered by" -->
+    <TextView
+        android:id="@+id/poweredBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/powered_by_tritech"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/connectBluetoothButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@null"
+        android:elevation="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/conectar_bluetooth"
+        android:textColor="#F5F5F5"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/bluetooth"
+        app:iconPadding="8dp"
+        app:iconSize="24dp"
+        app:layout_constraintTop_toBottomOf="@id/appDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 

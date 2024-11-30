@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#C8C8C8"
+    android:background="@drawable/gradiante"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
         android:gravity="center"
         android:text="@string/registro_de_usuario"
         android:textSize="20sp"
@@ -24,7 +25,7 @@
         android:autofillHints=""
         android:hint="@string/nombre_de_usuario"
         android:inputType="text"
-        android:textColorHint="#B9050505"
+        android:textColorHint="#D3D3D3"
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
@@ -35,7 +36,7 @@
         android:autofillHints=""
         android:hint="@string/correo_electr_nico"
         android:inputType="textEmailAddress"
-        android:textColorHint="#B9121212"
+        android:textColorHint="#D3D3D3"
         tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
@@ -46,7 +47,7 @@
         android:autofillHints=""
         android:hint="@string/contrase_a"
         android:inputType="textPassword"
-        android:textColorHint="#B9000000"
+        android:textColorHint="#D3D3D3"
         tools:ignore="VisualLintTextFieldSize" />
 
     <Button
@@ -55,7 +56,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#0785F4"
         android:text="@string/registrarse"
-        android:textColor="#000000"
+        android:textColor="@color/white"
         android:textColorHint="#F4ECEC"
         tools:ignore="VisualLintButtonSize" />
 

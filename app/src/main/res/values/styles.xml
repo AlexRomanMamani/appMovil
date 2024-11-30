@@ -1,0 +1,6 @@
+<resources>
+    <style name="DialogAnimation" parent="android:Theme.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+</resources>
